@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.github.shyiko:mysql-binlog-connector-java:0.20.1" type="repository">
+    <properties maven-id="com.github.shyiko:mysql-binlog-connector-java:0.20.1" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/shyiko/mysql-binlog-connector-java/0.20.1/mysql-binlog-connector-java-0.20.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
