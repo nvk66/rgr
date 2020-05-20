@@ -1,0 +1,31 @@
+methods:
+Client, Driver, Car, AutoPark
+
+registerTaxiDriver(Driver driver, AutoPark park)
+Request: "Name", "LastName", "CarModel", "CarNumber", "CarColour"
+Response: Status, Method
+
+registerClient(Client client)
+Request: "Login" "PhoneNumber"
+Response: status, method
+
+makeNewOrder(Order order, Driver driver, Car car)
+Request: "StartLocation", "EndLocation", "Price", "Card" (boolean), "Login" "PhoneNumber", "Name", "LastName", "CarModel",
+            "CarNumber", "CarColour"
+Response: status, method
+
+getAllOrderHistoryOfDriver(Driver driver)
+Request: "Name", "LastName"
+Response: "status", "method", List<Order>
+
+getAllClientHistory(Client client)
+Request: "Login" "PhoneNumber"
+Response: "status", "method", List<Order>
+
+getMoneyEarnedByDriver(Driver driver)
+Request: "Name", "LastName"
+Response: "status", "method", int SumOfAllPrice
+
+getAllMoneySpendByClient(Client client)
+Request: "Login" "PhoneNumber"
+Response: status, method, int SumOfAllPrice
