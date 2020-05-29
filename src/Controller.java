@@ -9,7 +9,9 @@ public class Controller extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String json = req.getReader().readLine();
+        System.out.println(json);
         resp.getWriter().write(View.makeResponse(json));
+
     }
 
 }
