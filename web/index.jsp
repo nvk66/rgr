@@ -15,13 +15,26 @@
   <input type="text" id="nameClient">
   <input type="text" id="lastNameClient">
   <input type="text" id="numberClient">
-  <button onclick=TFun()>Register</button>
+  <button onclick=registerC()>Register</button>
   <script>
-    function TFun(){
+    function registerC(){
       registerClient(document.getElementById('nameClient').value, document.getElementById('lastNameClient').value,
-              document.getElementById('numberClient').value);
+              document.getElementById('numberClient').value)
     }
+
+    function registerD() {
+      registerDriver(document.getElementById('nameDriver').value,document.getElementById('lastNameDriver').value,
+              document.getElementById('numberCar').value,document.getElementById('carModel').value,
+              document.getElementById('carColour').value)
+    }
+
   </script>
 
+  <input type="text" id="nameDriver">
+  <input type="text" id="lastNameDriver">
+  <input type="text" id="numberCar">
+  <input type="text" id="carModel">
+  <input type="text" id="carColour">
+  <button onclick=registerD()>RegisterDriver</button>
   </body>
 </html>

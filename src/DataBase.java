@@ -11,10 +11,11 @@ public class DataBase {
     private static Boolean status = false;
 
     private static Statement statement() {
-            String connectionString = "jdbc:mysql://127.0.0.1:3306/taxi?&useUnicode=true&serverTimezone=UTC&useSSL=false";
+            String connectionString = "jdbc:mysql://127.0.0.1:3306/taxi?allowPublicKeyRetrieval=true&useSSL=false" +
+                    "&useUnicode=true&serverTimezone=UTC&useSSL=false";
 
             try {
-                Class.forName("com.mysql.jdbc.Driver");
+                Class.forName("com.mysql.cj.jdbc.Driver");
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }
@@ -34,8 +35,8 @@ public class DataBase {
         try {
             //@TODO
             statement().execute("INSERT INTO drivers (idDriver,name,lastName,carModel,carNumber,carColor)"+
-                    " VALUES ("+inDrivers()+",'"+m.get("name")+"','"+m.get("lastName")+"','"+m.get("carModel")+"')," +
-                    "'"+m.get("carNumber")+"','"+m.get("carColor")+"')");
+                    " VALUES ("+inDrivers()+",'"+m.get("name")+"','"+m.get("lastName")+"','"+m.get("carModel")+"'," +
+                    m.get("carNumber")+",'"+m.get("carColor")+"')");
             response.put("status","ok");
         } catch (SQLException e) {
             e.printStackTrace();

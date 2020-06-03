@@ -30,8 +30,7 @@ public class Parser {
         HashMap<String,ArrayList<HashMap<String,String>>> hashMap= new HashMap<>();
         hashMap.put("orders",map);
         JSONObject jsonObject = new JSONObject(hashMap);
-        jsonObject.put("method","get_orders");
-        jsonObject.put("status","ok");
+        jsonObject.put("method","getAllClientHistory");
         jsonObject.put("orders",map);
         return jsonObject.toString();
     }
