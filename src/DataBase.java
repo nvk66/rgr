@@ -59,11 +59,12 @@ public class DataBase {
     public static HashMap<String,String> addOrder(HashMap<String,String> m){
         HashMap<String,String> response = new HashMap<>();
         try {
-            statement().execute("INSERT INTO drivers (idOrders,idClient,idDriver,price,startLocation,endLocation)"+
+            statement().execute("INSERT INTO orders (idorders,idClient,idDriver,price,startLocaion,endLocation)"+
                     " VALUES ("+inOrders()+",'"+findByName(m.get("clientName"))+"','"+findDriver()+
-                    "','"+ m.get("price")+ "','"+m.get("startLocation")+"','"+m.get("endLocation")+"')");
+                    "','"+ price()+ "','"+m.get("startLocation")+"','"+m.get("endLocation")+"')");
             response.put("status","ok");
         } catch (SQLException e) {
+            response.put("status","error");
             e.printStackTrace();
         }
         return response;
@@ -72,18 +73,20 @@ public class DataBase {
     public static ArrayList<HashMap<String,String>> getOrders(String name){
         ArrayList<HashMap<String,String>> response = new ArrayList<HashMap<String,String>>();
         try {
-            ResultSet orderSet = statement().executeQuery("SELECT * FROM orders INNER JOIN drivers on" +
-                    " orders.idDriver = drivers.idDriver WHERE idClient ="+findByName(name));
+            ResultSet orderSet = statement().executeQuery("SELECT distinct idorders, idClient,price,startLocaion," +
+                    "endLocation,name,lastName,carColor,carModel,carNumber FROM orders JOIN drivers " +
+                    " WHERE idClient = "+findByName(name));
+            System.out.println("SELECT * FROM orders INNER JOIN drivers WHERE idClient ="+findByName(name));
             while(orderSet.next()){
                 HashMap<String,String> temp = new HashMap<>();
-                temp.put("price",orderSet.getNString("price"));
-                temp.put("startLocation",orderSet.getNString("startLocation"));
-                temp.put("endLocation",orderSet.getNString("endLocation"));
-                temp.put("name",orderSet.getNString("name"));
-                temp.put("lastName",orderSet.getNString("lastName"));
-                temp.put("carModel",orderSet.getNString("carModel"));
-                temp.put("carNumber",orderSet.getNString("carNumber"));
-                temp.put("carColor",orderSet.getNString("carColor"));
+                temp.put("price",orderSet.getString("price"));
+                temp.put("startLocation",orderSet.getString("startLocaion"));
+                temp.put("endLocation",orderSet.getString("endLocation"));
+                temp.put("name",orderSet.getString("name"));
+                temp.put("lastName",orderSet.getString("lastName"));
+                temp.put("carModel",orderSet.getString("carModel"));
+                temp.put("carNumber",orderSet.getString("carNumber"));
+                temp.put("carColor",orderSet.getString("carColor"));
                 response.add(temp);
             }
         } catch (SQLException e) {
@@ -122,7 +125,7 @@ public class DataBase {
         ResultSet set = statement().executeQuery("SELECT * FROM clients");
         while(set.next()){
             if(set.getString("name").equals(name)){
-                id = set.getInt("clientId");
+                id = set.getInt("idClient");
             }
         }
         return id;
@@ -133,7 +136,10 @@ public class DataBase {
         return id;
     }
 
-
+    private static int price() {
+        int id = (int) Math.round((Math.random()*100));
+        return id;
+    }
 
 
 

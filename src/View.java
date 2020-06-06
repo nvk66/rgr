@@ -12,7 +12,7 @@ public class View {
             switch (method) {
                 case "getAllClientHistory":
                     return Parser.makeJson(DataBase.getOrders(request.get("name")));
-                case "makeNewOrder":
+                case "addOrder":
                     response = DataBase.addOrder(request);
                     break;
                 case "registerClient":

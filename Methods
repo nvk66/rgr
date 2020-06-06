@@ -10,7 +10,7 @@ Request: "Login" "PhoneNumber"
 Response: status, method
 
 makeNewOrder(Order order, Driver driver, Car car)
-Request: "StartLocation", "EndLocation", "Price", "Login" "PhoneNumber", "Name", "LastName", "CarModel",
+Request: "StartLocation", "EndLocation", "Price", "PhoneNumber", "Name", "LastName", "CarModel",
             "CarNumber", "CarColour"
 Response: status, method
 

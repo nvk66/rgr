@@ -27,12 +27,14 @@ public class Parser {
     }
 
     public static String makeJson(ArrayList<HashMap<String,String>> map) throws JSONException {
-        HashMap<String,ArrayList<HashMap<String,String>>> hashMap= new HashMap<>();
-        hashMap.put("orders",map);
-        JSONObject jsonObject = new JSONObject(hashMap);
-        jsonObject.put("method","getAllClientHistory");
-        jsonObject.put("orders",map);
-        return jsonObject.toString();
+        StringBuilder str = new StringBuilder();
+        str.append("[");
+        for(int i=0;i<map.size();i++){
+            str.append(new JSONObject(map.get(i)).toString()+((i+1 != map.size())? ",":""));
+        }
+        str.append("]");
+        System.out.println(str);
+        return str.toString();
     }
 
 

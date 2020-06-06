@@ -28,6 +28,15 @@
               document.getElementById('carColour').value)
     }
 
+    function addOrder(){
+      addOrders(document.getElementById('nameClientOrder').value,document.getElementById('startLocationOrder').value,
+              document.getElementById('endLocationOrder').value)
+    }
+
+    function show(){
+      getOrders(document.getElementById('name').value,document.getElementById('list'))
+    }
+
   </script>
 
   <input type="text" id="nameDriver">
@@ -36,5 +45,14 @@
   <input type="text" id="carModel">
   <input type="text" id="carColour">
   <button onclick=registerD()>RegisterDriver</button>
+
+  <input type="text" id="nameClientOrder">
+  <input type="text" id="startLocationOrder">
+  <input type="text" id="endLocationOrder">
+  <button onclick=addOrder()>addOrder</button>
+
+  <input type="text" id="name">
+  <button onclick=show()>getOrders</button>
+  <ul id="list"></ul>
   </body>
 </html>
