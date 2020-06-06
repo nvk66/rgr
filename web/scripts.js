@@ -36,6 +36,7 @@ function registerDriver(name,lastName,carModel,carNumber,carColor) {
             'method' : 'registerDriver'} ;
     xhr.send(JSON.stringify(json));
 }
+
 function addOrder(name,lastName,number) {
     let xhr = new XMLHttpRequest();
     xhr.open('POST','Controller');
