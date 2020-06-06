@@ -11,7 +11,7 @@ public class DataBase {
     private static Boolean status = false;
 
     private static Statement statement() {
-            String connectionString = "jdbc:mysql://127.0.0.1:3306/taxi?allowPublicKeyRetrieval=true&useSSL=false" +
+            String connectionString = "jdbc:mysql://localhost:3306/taxi?allowPublicKeyRetrieval=true&useSSL=false" +
                     "&useUnicode=true&serverTimezone=UTC&useSSL=false";
 
             try {

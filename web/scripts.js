@@ -37,7 +37,7 @@ function registerDriver(name,lastName,carModel,carNumber,carColor) {
     xhr.send(JSON.stringify(json));
 }
 
-function addOrders(name,start,end) {
+function addOrder(name,lastName,number) {
     let xhr = new XMLHttpRequest();
     xhr.open('POST','Controller');
     let json ='';
@@ -81,4 +81,5 @@ function getOrders(name,list) {
     }
     json ={ 'name' : name , 'method' : 'getAllClientHistory' } ;
     xhr.send(JSON.stringify(json));
+
 }

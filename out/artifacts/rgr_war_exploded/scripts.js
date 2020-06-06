@@ -37,7 +37,11 @@ function registerDriver(name,lastName,carModel,carNumber,carColor) {
     xhr.send(JSON.stringify(json));
 }
 
+<<<<<<< HEAD
 function addOrders(name,start,end) {
+=======
+function addOrder(name,lastName,number) {
+>>>>>>> 6aaec3054e90ef97ae60c453c37f1292295dce49
     let xhr = new XMLHttpRequest();
     xhr.open('POST','Controller');
     let json ='';
@@ -56,7 +60,11 @@ function addOrders(name,start,end) {
     xhr.send(JSON.stringify(json));
 }
 
+<<<<<<< HEAD
 function getOrders(name,list) {
+=======
+function getOrders(name) {
+>>>>>>> 6aaec3054e90ef97ae60c453c37f1292295dce49
     let xhr = new XMLHttpRequest();
     xhr.open('POST','Controller');
     let json ='';
@@ -66,6 +74,7 @@ function getOrders(name,list) {
         if (xhr.status != 200) {
             alert(xhr.status + ': ' + xhr.statusText);
         } else {
+<<<<<<< HEAD
             let orders = JSON.parse(xhr.responseText);
             let li = list;
             while(li.firstChild) {
@@ -82,3 +91,13 @@ function getOrders(name,list) {
     json ={ 'name' : name , 'method' : 'getAllClientHistory' } ;
     xhr.send(JSON.stringify(json));
 }
+=======
+            let response = JSON.parse(xhr.responseText);
+            console.log(response);
+            return response;
+        }
+    }
+    json ={ 'name' : name , 'method' : 'registerClient' } ;
+    xhr.send(JSON.stringify(json));
+}
+>>>>>>> 6aaec3054e90ef97ae60c453c37f1292295dce49
