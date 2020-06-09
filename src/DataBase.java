@@ -33,10 +33,13 @@ public class DataBase {
     public static HashMap<String,String> registerDriver(HashMap<String,String> m){
     HashMap<String,String> response = new HashMap<>();
         try {
+//            System.out.println("INSERT INTO drivers (idDriver,name,lastName,carModel,carNumber,carColor)"+
+//                    " VALUES ("+inDrivers()+",'"+m.get("name")+"','"+m.get("lastName")+"','"+m.get("carModel")+"'," +
+//                    m.get("carNumber")+",'"+m.get("carColor")+"')");
             //@TODO
             statement().execute("INSERT INTO drivers (idDriver,name,lastName,carModel,carNumber,carColor)"+
-                    " VALUES ("+inDrivers()+",'"+m.get("name")+"','"+m.get("lastName")+"','"+m.get("carModel")+"'," +
-                    m.get("carNumber")+",'"+m.get("carColor")+"')");
+                    " VALUES ("+inDrivers()+",'"+m.get("name")+"','"+m.get("lastName")+"','"+m.get("carModel")+"','" +
+                    m.get("carNumber")+"','"+m.get("carColor")+"')");
             response.put("status","ok");
         } catch (SQLException e) {
             e.printStackTrace();
@@ -59,7 +62,7 @@ public class DataBase {
     public static HashMap<String,String> addOrder(HashMap<String,String> m){
         HashMap<String,String> response = new HashMap<>();
         try {
-            statement().execute("INSERT INTO orders (idorders,idClient,idDriver,price,startLocaion,endLocation)"+
+            statement().execute("INSERT INTO orders (idorder,idClient,idDriver,price,startLocation,endLocation)"+
                     " VALUES ("+inOrders()+",'"+findByName(m.get("clientName"))+"','"+findDriver()+
                     "','"+ price()+ "','"+m.get("startLocation")+"','"+m.get("endLocation")+"')");
             response.put("status","ok");
@@ -73,14 +76,13 @@ public class DataBase {
     public static ArrayList<HashMap<String,String>> getOrders(String name){
         ArrayList<HashMap<String,String>> response = new ArrayList<HashMap<String,String>>();
         try {
-            ResultSet orderSet = statement().executeQuery("SELECT distinct idorders, idClient,price,startLocaion," +
-                    "endLocation,name,lastName,carColor,carModel,carNumber FROM orders JOIN drivers " +
-                    " WHERE idClient = "+findByName(name));
+            ResultSet orderSet = statement().executeQuery("SELECT * FROM taxi.orders INNER JOIN taxi.drivers ON " +
+                    "orders.idDriver = drivers.idDriver WHERE idClient ="+findByName(name));
             System.out.println("SELECT * FROM orders INNER JOIN drivers WHERE idClient ="+findByName(name));
             while(orderSet.next()){
                 HashMap<String,String> temp = new HashMap<>();
                 temp.put("price",orderSet.getString("price"));
-                temp.put("startLocation",orderSet.getString("startLocaion"));
+                temp.put("startLocation",orderSet.getString("startLocation"));
                 temp.put("endLocation",orderSet.getString("endLocation"));
                 temp.put("name",orderSet.getString("name"));
                 temp.put("lastName",orderSet.getString("lastName"));
@@ -137,7 +139,7 @@ public class DataBase {
     }
 
     private static int price() {
-        int id = (int) Math.round((Math.random()*100));
+        int id = (int) Math.round((Math.random()*1000));
         return id;
     }
 

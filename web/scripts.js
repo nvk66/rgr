@@ -37,7 +37,7 @@ function registerDriver(name,lastName,carModel,carNumber,carColor) {
     xhr.send(JSON.stringify(json));
 }
 
-function addOrder(name,lastName,number) {
+function addOrders(name,start,end) {
     let xhr = new XMLHttpRequest();
     xhr.open('POST','Controller');
     let json ='';
@@ -74,7 +74,7 @@ function getOrders(name,list) {
             console.log(orders)
             orders.forEach(function (order) {
                 li = li.appendChild(document.createElement('li'));
-                li.innerHTML =' ' + order.carColor + ' ' +  order.carModel + ' ' + order.carNumber + '' + order.endLocation +
+                li.innerHTML =' ' + order.carColor + ' ' +  order.carModel + ' ' + order.carNumber + ' ' + order.endLocation +
                     ' ' + order.startLocation +' '+ order.lastName + ' ' + order.name + ' ' + order.price;
             })
         }
