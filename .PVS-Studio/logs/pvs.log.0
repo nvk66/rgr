@@ -1,0 +1,117 @@
+[INFO][11:46:41][1]: ********************************
+[INFO][11:46:41][1]: Native library search paths: 
+[INFO][11:46:41][1]: C:\Users\Алексей\AppData\Roaming\PVS-Studio-Java\7.07.38241
+[INFO][11:46:41][1]: .
+[INFO][11:46:41][1]: C:\Users\Алексей\AppData\Roaming\PVS-Studio-Java\7.07.38241\..
+[INFO][11:46:41][1]: C:\Users\Алексей\AppData\Roaming\PVS-Studio-Java\7.07.38241\..\..
+[INFO][11:46:41][1]: C:\Users\Алексей\AppData\Roaming\PVS-Studio-Java\7.07.38241\..\..\build
+[INFO][11:46:41][1]: Additional path: native/win
+[INFO][11:46:41][1]: Native library found: C:\Users\Алексей\AppData\Roaming\PVS-Studio-Java\7.07.38241\native\win\analysis-core.dll
+[INFO][11:46:41][1]: ********************************
+[INFO][11:46:42][1]: Module: rgr
+[INFO][11:46:42][1]: Sources:
+[INFO][11:46:42][1]: C:/Users/Алексей/Desktop/rgr/src
+[INFO][11:46:42][1]: C:/Users/Алексей/Desktop/rgr/test
+[INFO][11:46:42][1]: Classpath:
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.se
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.internal.le
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.security.auth
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.sql
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.jartool
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.management
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.crypto.mscapi
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.internal.vm.compiler.management
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.jsobject
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.jconsole
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.javadoc
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.management.rmi
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.net
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.hotspot.agent
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.jshell
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.unsupported
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.sql.rowset
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.xml.crypto
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.naming
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.naming.rmi
+[INFO][11:46:42][1]: C:/Users/Алексей/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.internal.ed
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.internal.jvmstat
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.jdwp.agent
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.security.sasl
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.xml.dom
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.scripting.nashorn.shell
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.crypto.ec
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.jfr
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.jdeps
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.dynalink
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.internal.vm.ci
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.httpserver
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.sctp
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.datatransfer
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.rmi
+[INFO][11:46:42][1]: C:/Users/Алексей/.m2/repository/org/junit/jupiter/junit-jupiter/5.4.2/junit-jupiter-5.4.2.jar
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.management
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.jlink
+[INFO][11:46:42][1]: C:/Users/Алексей/Desktop/rgr/apache-tomcat-9.0.30/lib/servlet-api.jar
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.accessibility
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.management.agent
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.pack
+[INFO][11:46:42][1]: C:/Users/Алексей/.m2/repository/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.jar
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.net.http
+[INFO][11:46:42][1]: C:/Users/Алексей/Desktop/rgr/web/WEB-INF/lib/jettison-1.2.jar
+[INFO][11:46:42][1]: C:/Users/Алексей/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.transaction.xa
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.security.jgss
+[INFO][11:46:42][1]: C:/Users/Алексей/Desktop/rgr/web/WEB-INF/lib/mysql-connector-java-8.0.19.jar
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.xml
+[INFO][11:46:42][1]: C:/Users/Алексей/.m2/repository/org/junit/platform/junit-platform-commons/1.4.2/junit-platform-commons-1.4.2.jar
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.scripting
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.zipfs
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.base
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.instrument
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.naming.dns
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.compiler
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.internal.vm.compiler
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.localedata
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.charsets
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.jdi
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.scripting.nashorn
+[INFO][11:46:42][1]: C:/Users/Алексей/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.jar
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.compiler
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.smartcardio
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.management.jfr
+[INFO][11:46:42][1]: C:/Users/Алексей/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.4.2/junit-jupiter-params-5.4.2.jar
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.desktop
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.prefs
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.logging
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.editpad
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.attach
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/java.security.jgss
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.rmic
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.crypto.cryptoki
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.unsupported.desktop
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.jstatd
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.aot
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.internal.opt
+[INFO][11:46:42][1]: C:/Users/Алексей/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar
+[INFO][11:46:42][1]: C:/Program Files/Java/jdk-13!/jdk.jcmd
+[INFO][11:46:43][16]: Load model from cache...
+[INFO][11:46:43][16]: Build model incrementally...
+[INFO][11:46:43][16]: Current time: 1591681603170
+[INFO][11:46:43][16]: Last build time: 1591681271100
+[INFO][11:46:43][16]: Keyset size: 5
+[INFO][11:46:43][16]: Input sources size: 5
+[INFO][11:46:43][16]: Removed sources size: 0
+[INFO][11:46:43][16]: Added sources size: 0
+[INFO][11:46:43][16]: Common sources size: 5
+[INFO][11:46:43][16]: Incremental sources size: 0
+[INFO][11:46:43][16]: Old types size: 5
+[INFO][11:46:43][16]: Changed types size: 0
+[INFO][11:46:43][16]: Enter types loop
+[INFO][11:46:43][16]: Exit types loop
+[INFO][11:46:43][16]: Old packages size: 1
+[INFO][11:46:43][16]: Data processed
+[INFO][11:46:43][16]: Added: 0
+[INFO][11:46:43][16]: Removed: 0
+[INFO][11:46:43][16]: Modified : 0
+[INFO][11:46:43][16]: Model build success.

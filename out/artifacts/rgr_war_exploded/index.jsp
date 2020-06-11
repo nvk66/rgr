@@ -61,6 +61,10 @@
             getOrders(document.getElementById('name').value, document.getElementById('list'))
         }
 
+        // function update() {
+        //     updateSomething(document.)
+        // }
+
     </script>
 <div class="container-fluid">
     <div class="container">
@@ -96,6 +100,18 @@
             <input type="text" id="name" placeholder="Name">
             <button type="button" class="btn btn-danger" onclick=show()>getOrders</button>
 
+        </div>
+    </div>
+</div>
+<p>
+<p>
+<p>
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <input type="text" id="nameToBeChanged" placeholder="Name">
+            <input type="text" id="phoneToBeChanged" placeholder="Name">
+            <button type="button" class="btn btn-dark" onclick=update()>UpdateNameAndPhone</button>
         </div>
     </div>
 </div>
